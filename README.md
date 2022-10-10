@@ -1,4 +1,6 @@
-# GSoC-ML4SCI
+# Quantum Generative Adversarial Networks for High Energy Physics Analysis at the LHC
+
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
 ## What is a Generative Model?
 

@@ -69,5 +69,28 @@ A generative model for images might take into consideration correlations, which 
 Whereas, the discriminative model is a basic classifier that learns to distinguish between two different images or probability distributions.
 
 
-![logo](https://github.com/abzsd/GSoC-ML4SCI/blob/main/data/logo.jpeg?raw=true)
+![logo](https://github.com/abzsd/GSoC-ML4SCI/blob/main/data/logo1.svg?raw=true)
 
+## Models
+### Hybrid Quantum GAN
+This model of GAN can either have a quantum/classical generator, and a quantum/classical discriminator. The generator and the discriminator have convolutional layers either quantum or classical. 
+
+### Fully Quantum GANs
+This model will have both generator and discriminator as quantum convolutional layers. 
+
+### Entangled Quantum GAN
+This approach is inspired by this [paper](https://arxiv.org/abs/2105.00080) in which a fidelity test is used. A [Swap test](https://en.wikipedia.org/wiki/Swap_test)(fidelity test) is a quantum computation technique through which we can measure the closeness of two states, i.e., how much two quantum states are similar to each other. The other uniqueness of this approach is that we upload the random data and the real data both at the same time in one train step instead of one following the other.
+
+ There is also an implementation of the fully quantum model using pennylane library, and also some notebooks containing the demo notebooks for the implementation of ```lightning.qubit``` and ```lightning.gpu```, which uses ```cuQuantum-SDK``` by NVIDIA.
+ 
+ ## Results
+ The training for GANs is a difficult task even for classical ML programs, and the addition of quantum computing (provided its nascent status) makes it more difficult. The unavailability of large quantum systems, is hence mitigated by the use of simulators, like those given by Pennylane and NVIDIA. As the number of instances increase, the amount of time required to compile and execute the entire circuit also increases. Hence, as you would be able to see in this project that, there were instances where we had to reduce the dimensionality and amount of data, in accordance with the limitations imposed by the early stage devices/simulators. 
+ Some of the results that I had obtained during the course of my training are displayed below - 
+
+![logo](https://github.com/abzsd/GSoC-ML4SCI/blob/main/plots/dcgan.gif?raw=true)
+
+![logo](https://github.com/abzsd/GSoC-ML4SCI/blob/main/plots/dcgan_v2.gif?raw=true)
+
+![logo](https://github.com/abzsd/GSoC-ML4SCI/blob/main/plots/dcgan_v3.gif?raw=true)
+
+![logo](https://github.com/abzsd/GSoC-ML4SCI/blob/main/plots/QDiscriminator_v2_loss.png?raw=true)

@@ -84,9 +84,9 @@ This approach is inspired by this [paper](https://arxiv.org/abs/2105.00080) in w
  Some of the results that I had obtained during the course of my training are displayed below - 
 
 ![logo](https://github.com/abzsd/GSoC-ML4SCI/blob/main/plots/dcgan.gif?raw=true)
+classical DCGAN output
 
 ![logo](https://github.com/abzsd/GSoC-ML4SCI/blob/main/plots/dcgan_v2.gif?raw=true)
+classical DCGAN v2 output
 
-![logo](https://github.com/abzsd/GSoC-ML4SCI/blob/main/plots/dcgan_v3.gif?raw=true)
-
-![logo](https://github.com/abzsd/GSoC-ML4SCI/blob/main/plots/QDiscriminator_v2_loss.png?raw=true)
+The rest of the outputs can be found in the plots folder.

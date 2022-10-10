@@ -25,10 +25,6 @@ Install the necessary libraries and frameworks.
 ```shell
 pip install -r requirements.txt
 ```
-Install the QGANSHEP package
-```shell
-setup.py install
-```
 
 _Note: If the code does not run or gives errors, try using google colab and using the following versions for tf and tfq.
 <br>
